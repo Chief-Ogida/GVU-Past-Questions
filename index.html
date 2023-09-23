@@ -10,9 +10,9 @@
     <link rel="shortcut icon" href="images/android-chrome-192x192.png" type="image/x-icon">
 </head>
 <body>
-    <div id="preloader"></div>
-
-
+    <div class="loader">
+        <img src="images/preloader.gif" alt="">
+    </div>
 
     <nav>
         <div class="container nav__container">
@@ -342,11 +342,13 @@
       }
     });
 
-    var loader = document.getElementById("preloader");
+    var loader = document.querySelector(".loader")
 
-    window.addEventListener("load", function(){
-        loader.style.display = "none";
-    })
+    window.addEventListener("load", vanish);
+
+    function vanish() {
+        loader.classList.add("disppear");
+    }
   </script>
   
 </body>
