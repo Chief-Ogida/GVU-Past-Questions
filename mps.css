@@ -1,0 +1,19 @@
+.head__info{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -160px;
+}
+.images__past-questions{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.7rem;
+}
+
+@media screen and (max-width:600px) {
+    .images__past-questions{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }   
+    
+}

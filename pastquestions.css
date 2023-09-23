@@ -1,0 +1,47 @@
+.course__info p i{
+    font-size: 13px;
+}
+.tobefollowed{
+    display: flex;
+    justify-content: center;
+}
+
+.payment__info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+.account__details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.payroll{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:1024px) {
+    .tobefollowed{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .payment__info{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .tobefollowed{
+        font-size: 1.3rem;
+        margin-left: 1rem;
+        gap: 2rem;
+    }
+   
+
+}
